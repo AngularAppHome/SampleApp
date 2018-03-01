@@ -1,0 +1,29 @@
+<div class="Container">
+<form #employeeForm="ngForm" (ngSubmit)="onSubmit(employeeForm)">
+  <div class="form-group">
+    <label>Name</label>
+    <input class="form-control" name="name" #name="ngModel" [(ngModel)]="employeeService.name" placeholder="Enter Your Name" required>
+  </div>
+  <div class="form-group">
+    <label>Designation</label>
+    <input class="form-control" name="position" #position="ngModel" [(ngModel)]="employeeService.position" placeholder="Designation" required>
+  </div>
+  <div class="form-group">
+    <label>Office</label>
+    <input class="form-control" name="office" #office="ngModel" [(ngModel)]="employeeService.office" placeholder="Organization You are Working" required>
+  </div>
+  <div class="form-group">
+    <label>Salary</label>
+    <div class="input-group">
+      <div class="input-group-addon">
+        <i class="fa fa-dollar"></i>
+      </div>
+      <input class="form-control" name="salary" #salary="ngModel" [(ngModel)]="employeeService.salary" placeholder="Your Salary" required>
+    </div>
+  </div>
+  <div class="form-group">
+      <button class="btn btn-default" type="sumbit" [disabled]="!employeeForm.valid">Submit</button>
+      <button class="btn btn-default" type="reset" (click)="resetForm(employeeForm)">Reset</button>
+  </div>
+</form>
+</div>

@@ -1,0 +1,32 @@
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 900px;
+    overflow: hidden;
+    background-color: #3f51b5;
+    height:80px;
+}
+ 
+li {
+    float: left;
+}
+ 
+li a {
+    display: block;
+    color: whitesmoke;
+    text-transform: uppercase;
+    background-color: transparent;
+    text-align: center;
+    padding: 40px 16px 40px 0px;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Poppins,sans-serif;
+}
+ 
+li a:hover {
+    background-color: #203cdb;
+}
+ /* background-color: #3f51b5; */
+ /* #dc3958 */
+ /* #203cdb; */
